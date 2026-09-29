@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/predict",
+      "destination": "https://glaucoma-eye-detection.onrender.com/predict"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://glaucoma-eye-detection.onrender.com/:path*"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
